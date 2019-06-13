@@ -1118,7 +1118,7 @@ btnWrite.setOnClickListener(new View.OnClickListener() {
             //구글 장소 검색 API 호출
             new NRPlaces.Builder()
                     .listener(this)
-                    .key("AIzaSyDVrgJHEj7aTXeZ9Fu4mWeyLNT3VKLhe9I") //장소 검색 api 키 값
+                    .key("") //장소 검색 api 키 값
                     .latlng(lat, lng) //현재 위치 기준
                     .radius(5000) //반경 5키로 이내 검색
                     .type(PlaceType.SHOE_STORE) //신발 가게
