@@ -1002,6 +1002,20 @@ btnWrite.setOnClickListener(new View.OnClickListener() {
 
     현재 위치를 얻고 여러가지 위치 정보 제공되는 코드<br>
     ![캡처2](https://user-images.githubusercontent.com/48506075/59384249-b86bd500-8d9c-11e9-9f4a-d4b80be8e512.PNG)<br>
+    
+    onCleate<br>
+    
+    	//주변 가게 찾기 버튼
+        Button btnSearch2 = (Button) findViewById(R.id.btnSearch2);
+        btnSearch2.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                prepareMap();
+                drawMap();
+                showPlaceInformation(currentPosition);
+            }
+        });
+
 
 
         private void drawMap() {
@@ -1054,6 +1068,7 @@ btnWrite.setOnClickListener(new View.OnClickListener() {
             }
 
         }  
+
 
 
         private void prepareMap() {
