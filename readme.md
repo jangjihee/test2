@@ -1051,13 +1051,6 @@ btnWrite.setOnClickListener(new View.OnClickListener() {
                 //카메라 이동의 애니메이션 효과
                 //줌레벨 : 1 ~ 21 숫자가 클수록 자세한 지도
                 mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(currentPosition, 13));
-                //상명대 : 36.8336012,127.176977
-                //맵에 마커 표시
-                MarkerOptions marker = new MarkerOptions()
-                        .position(currentPosition)
-                        .title("현재 위치");
-                mMap.addMarker(marker);
-
             }
 
         }  
